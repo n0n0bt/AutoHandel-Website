@@ -25,6 +25,62 @@
 }
 
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/**Cookies**/
+.cookies{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cookies a {
+    color: #F3BD00;
+    font-weight: 600;
+
+}
+
+.cookies p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#cookies-btn{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    color: #092139;
+    background-color:#F3BD00 ;
+}
+#cookies-btn:hover{
+    background-color: #092139;
+    color: white;
+}
+
+.subcontainer{
+    width: 85%;
+    margin: auto;
+}
+
+#cookies{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color:#58585ac7;
+    z-index: 10;
+    display: none;
+}
+
+
 
 
 /*** Spinner ***/
@@ -47,7 +103,40 @@
 
 }
 
+/** Modal **/
+.img-size{
+    padding: 0;
+    margin: 0; 
+    height: 450px;
+    width: 700px;
+    background-size: cover;
+    overflow: hidden;
+}
+.modal-content {
+    width: 700px;
+    border:none;
+}
+.modal-body {
+    padding: 0;
+}
 
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    width: 30px;
+    height: 48px;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    width: 30px;
+    height: 48px;
+}
+
+
+
+.input-group-text {
+    
+    padding: 0.75rem 0.75rem;
+}
 
 
 /*** Button ***/
@@ -146,6 +235,9 @@ a:hover{
     font-size: 1.5rem;
     padding: .75rem 2rem;
   }
+
+  
+
 }
 
 .btn.btn-primary,
@@ -179,8 +271,8 @@ a:hover{
 }
 
 
+/*** Navbar ***/	
 
-/*** Navbar ***/
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
@@ -195,14 +287,17 @@ a:hover{
     margin-right: 30px;
     padding: 25px 0;
     color: var(--dark);
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--secondary);
+}
+.navbar-light .navbar-toggler{
+    border-color: rgba(255, 255, 255, 0);
 }
 
 .navbar .dropdown-toggle::after {
@@ -224,7 +319,80 @@ a:hover{
         border-top: 1px solid #EEEEEE;
     }
 
+    .button-73{
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: -.24px;
+        margin: 0;
+        margin-top: 20px;
+        padding: 1rem 1.3rem;padding: 1rem 1.3rem;
+    }
+
+    .cookies{
+        padding: 10px 0;
+    }
+
 }
+
+@media (max-width: 664px){
+    .he-1{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 554px){
+    .he-1{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 526px){
+    .he-1{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 499px){
+    .he-1{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 473px){
+    .he-1{
+        font-size: 1.2rem;
+
+    }
+    
+
+    .logo {
+        width: 159px;
+        height: 38px;
+    }
+
+}
+
+@media (max-width: 444px){
+    .he-1{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 412px){
+    
+    .button-73{
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: -.24px;
+        margin: 0;
+        margin-top: 20px;
+        padding: 1rem 1.3rem;padding: 1rem 1.3rem;
+    }
+
+    
+}
+
 
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
@@ -244,10 +412,18 @@ a:hover{
         opacity: 1;
     }
 
+    .background-image{
+        background-image: url("/img/Car-hero-section.jpg");
+        background-size: cover; /* Cover the entire background area */
+        background-position: center center; /* Center the background image */
+        width: 100%;
+        min-height: 400px;
+    }
+
+
+
 
 }
-
-
 
 
 @media (min-width: 830px) {
@@ -257,7 +433,7 @@ a:hover{
 } 
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("/img/Car-hero-section.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -277,14 +453,29 @@ a:hover{
 
 .background-image {
     background-image: url("/img/Car-hero-section.jpg");
-    background-position: center;
-    background-size:auto;
+    background-position: center center;
+    background-size:cover;
     background-repeat: no-repeat;
     width:inherit;
     width: 100%;
-    min-height: 750px;
+    min-height: 600px;
     
 }
+
+/* .background-image {
+    background-image: url('/img/Car-hero-section.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    min-height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; 
+} */
+
+
 
 /*** Courses ***/
 .courses {
