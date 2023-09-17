@@ -24,6 +24,14 @@
     z-index: 99;
 }
 
+.whatsapp {
+    position: fixed;
+    display: ;
+    left: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -236,7 +244,7 @@ a:hover{
     padding: .75rem 2rem;
   }
 
-  
+
 
 }
 
@@ -309,6 +317,10 @@ a:hover{
     margin-left: 8px;
 }
 
+.dissapear{
+    display: none;
+}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
@@ -332,6 +344,9 @@ a:hover{
         padding: 10px 0;
     }
 
+    .dissapear{
+        display: block;
+    }
 }
 
 @media (max-width: 664px){
@@ -420,11 +435,34 @@ a:hover{
         min-height: 400px;
     }
 
-
-
-
 }
 
+@media (max-width: 390px){
+    .probefahrt-h1{
+        font-size: 20px;
+    }
+
+    .probefahrt-p{
+        font-size: 15px;
+    }
+
+    .t-c h1, h6, h4, p{
+        text-align: center;
+        align-items: center;
+    }
+
+    .t-cc{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+}
 
 @media (min-width: 830px) {
     .logo-hero{
