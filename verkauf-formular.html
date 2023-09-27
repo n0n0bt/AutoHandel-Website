@@ -41,7 +41,7 @@
 
 
      <!-- Topbar Start -->
-     <div class="container-fluid bg-dark text-light p-0">
+     <div class="container-fluid bg-dark text-light p-0" id="top">
       <div class="row gx-0 d-none d-lg-flex">
           <div class="col-lg-7 px-5 text-start">
               <div class="h-100 d-inline-flex align-items-center me-4">
@@ -82,7 +82,7 @@
               <a href="index.html" class="nav-item nav-link">Startseite</a>
               <a href="index.html#about-us" class="nav-item nav-link">Über uns</a>
               <a href="kontakt.html" class="nav-item nav-link">Kontakt</a>
-              <a href="https://home.mobile.de/AG-AUTOMOBILE#ses" class="nav-item nav-link">Auto Kaufen</a>
+              <a href="https://home.mobile.de/AG-AUTOMOBILE#ses" target="_blank" class="nav-item nav-link">Auto Kaufen</a>
               <a href="verkauf-formular.html" class="nav-item nav-link dissapear brd py-4 px-lg-5 text-color text-center">Auto Verkaufen</a>
           </div>
           <a href="verkauf-formular.html" class="brd py-4 px-lg-5 d-none d-lg-block text-color">Auto Verkaufen<i class="fa fa-arrow-right ms-3"></i></a>
@@ -96,7 +96,7 @@
             <h1 class="display-4 text-white animated slideInDown mb-4">Auto verkaufen</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Startseite</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Startseite</a></li>
                     <li class="breadcrumb-item text-primary active" aria-current="page">Auto verkaufen</li>
                 </ol>
             </nav>
@@ -116,7 +116,7 @@
                     </div>
                 </div> -->
                 <div class=" wow fadeInUp" data-wow-delay="0.5s">
-                  <div class="d-flex justify-content-end" style="margin-bottom: -18px;"><img class="" src="img/car.png" width="140" alt=""></div>
+                  <div class="d-flex justify-content-end " style="margin-bottom: -18px;"><img class="auto-logo" src="img/car.png" width="140" alt=""></div>
                      
                     <h6 class="text-primary text-uppercase mb-2">Auto verkaufen</h6>
                    
@@ -124,7 +124,8 @@
                         <div class="col-12 col-sm-12">
                            <div class="card c-brd-light condition">
                               <div class="card-body bg-light">
-                                 <form method="post" action="" class="needs-validation" novalidate="" name="formankauf">
+                                 <form method="POST" class="needs-validation" data-netlify="true" name="contact">
+                                    <input type="hidden" name="form-name" value="contact">
                                     <div class="row">
                                        <div class="col-12 col-sm-12 col-lg-4">
                                           <div class="form-group">
@@ -612,10 +613,11 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <div class="elfsight-app-e42821b5-d4db-43f8-9e66-051e183fecf8"></div>
+    <a href="#top" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     <a href="https://wa.me/004917697727775" class="whatsapp" target="_blank"><img width="50" height="50" src="img/whatsapp.png" alt=""></a>
 
-
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
