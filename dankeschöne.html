@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Das Autoeck - Kontakt & Öffnungszeiten</title>
+    <title>Das Autoeck - Startseite</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -32,24 +33,36 @@
 </head>
 
 <body>
+    <!--Cookies Start-->
+    <div id="cookies">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="cookies">
+                    <p>Diese Website verwendet Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten.<a href="impressum.html#cookiesID"> Weitere Informationen.</a></p>
+                    <button id="cookies-btn">Ich stimme zu!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cookies End-->
+
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
 
-
-     <!-- Topbar Start -->
-     <div class="container-fluid bg-dark text-light p-0 " id="top">
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light p-0" id="top">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt  me-2"></small>
-                    <small><a class="text-light" href="https://www.google.com/maps/place/Dammer+Str.+50,+49451+Holdorf/data=!4m2!3m1!1s0x47b75b3dc8bbe093:0x91df2c6b09f08005?sa=X&ved=2ahUKEwjp2aLh17GBAxWXhf0HHUi9B1UQ8gF6BAgSEAA&ved=2ahUKEwjp2aLh17GBAxWXhf0HHUi9B1UQ8gF6BAgVEAI" target="_blank">Dammerstr. 50, 49451, Holdorf</a></small>
+                    <small><a class="text-light" href="https://www.google.com/maps/place/Dammer+Str.+50,+49451+Holdorf/data=!4m2!3m1!1s0x47b75b3dc8bbe093:0x91df2c6b09f08005?sa=X&ved=2ahUKEwjp2aLh17GBAxWXhf0HHUi9B1UQ8gF6BAgSEAA&ved=2ahUKEwjp2aLh17GBAxWXhf0HHUi9B1UQ8gF6BAgVEAI" target="_blank">Dammerstr. 50, 49451 Holdorf</a></small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock  me-2"></small>
-                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                    <small>Mon - Fri : 10.00 AM - 18.00 PM Samstags: 10.00-13.00</small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -79,109 +92,36 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Startseite</a>
-                <a href="index.html#about-us" class="nav-item nav-link">Über uns</a>
-                <a href="kontakt.html" class="nav-item nav-link active">Kontakt</a>
+                <a href="#about-us" class="nav-item nav-link">Über uns</a>
+                <a href="kontakt.html" class="nav-item nav-link">Kontakt</a>
                 <a href="https://www.autoscout24.de/haendler/das-autoeck" target="_blank" class="nav-item nav-link">Auto Kaufen</a>
                 <a href="verkauf-formular.html" class="nav-item nav-link dissapear brd py-4 px-lg-5 text-color text-center">Auto Verkaufen</a>
-
             </div>
             <a href="verkauf-formular.html" class="brd py-4 px-lg-5 d-none d-lg-block text-color">Auto Verkaufen<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center">
-            <h1 class="display-4 text-white animated slideInDown mb-4">Kontakt & Öffnungszeiten</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Startseite</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Kontakt</li>
-                </ol>
-            </nav>
+    <!--Hero Section Start-->
+    <div class="background-image text-center p-5 mb-0">
+        <div class="pt-3 ">
+            <h2 style="color: #F3BD00;  -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: black;">Danke!</h2>
+            <h2>Das Formular wurde erfolgreich übermittelt.<br><br> Zurück zur Originalseite:</h2>
+            <a href="index.html" class="d-flex align-items-center justify-content-center"><button class="button-53" role="button">Startseite</button></a>
         </div>
     </div>
-    <!-- Page Header End -->
+    <!--Hero Section End-->
 
-
-    <!-- Contact Start -->
-    <div class="container-xxl py-6">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 450px;">
-                    <div class="position-relative h-100">
-                        <iframe class="position-relative w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.676486269841!2d8.1350373!3d52.57546149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b75b3dc8bbe093%3A0x91df2c6b09f08005!2sDammer%20Str.%2050%2C%2049451%20Holdorf!5e0!3m2!1sen!2sde!4v1694957389632!5m2!1sen!2sde"
-                        frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h6 class="text-primary text-uppercase mb-2">Kontaktieren Sie uns - Wir helfen Ihnen gerne</h6>
-                    <h1 class="display-6 mb-4">Haben Sie Fragen zu unseren Service oder möchten eine Beratung, bitte nutzen Sie unser Formular.</h1>
-                    <p class="mb-4">Wir werden uns schnell um Ihr Anliegen kümmern. Oder rufen Sie uns direkt per Telefon an: <a href="tel:+4917697727775">+49 176 97727775</a>.</p>
-                    <form action="https://formsubmit.co/info@dasautoeck.de" method="POST">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" id="name" name="name" placeholder="Your Name">
-                                    <label for="name">Vorname und Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" name="email" class="form-control border-0 bg-light"  id="email" placeholder="Your Email">
-                                    <label for="email">Iher E-Mail Adresse</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0 bg-light" placeholder="Leave a message here" name="description" id="message" style="height: 150px"></textarea>
-                                    <label for="message">Wie könen wir helfen?</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Senden</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
+    
 
     <!-- Footer Start -->
-    <!-- Features Start -->
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-primary text-uppercase mb-2">WAS JETZT ?!</h6>
-                <h1 class="display-6 mb-4">Veräußern Sie Ihr älteres Auto –
-                    zu einem angemessenen Preis und ohne Hektik</h1>
-                <p class="mb-5">Wir stellen innerhalb eines Tages eine Bewertung für Ihr Auto aus.
-                     Vereinbaren Sie jetzt einen Termin ohne lästige Wartezeiten. Ihr Auto wird im Handumdrehen verkauft.</p>
-                <a class="btn btn-primary py-3 px-5" href="verkauf-formular.html">Auto Verkaufen</a>
-            </div>
-            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.5s">
-                <div class="position-relative pe-5 pt-5 h-100 " style="min-height: 400px; width:auto;">
-                    <img class="position-absolute w-100 h-100" src="img/Car-removebg.png" alt="Auto verkaufen" style="object-fit: cover;">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-light footer mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 logo-footer">
                 <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">In Kontakt treten.</h4>
-                    <a href="index.html" class=" navbar-brand d-flex align-items-center">
+                    <a href="index.html" class="navbar-brand ">
                         <img class="logo" src="img/logo.png" alt="">
                     </a>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Dammerstr. 50, 49451 Holdorf</p>
@@ -198,14 +138,14 @@
                 <div class="col-lg-4 col-md-6">
                     <form action="https://formsubmit.co/n0n0bt@gmail.com" method="POST">
                         <div class="input-group">
-                            <input type="text" name="E-Mail" class="form-control p-3 border-0" placeholder="Deine E-mail Addresse">
+                            <input type="text" class="form-control p-3 border-0" placeholder="Deine E-mail Addresse">
                             <button class="btn btn-primary">Anmelden</button>
                         </div>
                     </form>
                     <!-- <h6 class="text-white mt-4 mb-3">Folgen Sie uns</h6>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-instagram"></i></a>
                     </div> -->
                 </div>
             </div>
@@ -235,9 +175,10 @@
     <!-- Back to Top -->
     <div class="elfsight-app-e42821b5-d4db-43f8-9e66-051e183fecf8"></div>
     <a href="#top" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    <a href="https://wa.me/004917697727775" class="whatsapp" target="_blank"><img width="50" height="50" src="img/whatsapp.png" alt=""></a>
+    <a href="https://wa.me/" class="whatsapp" target="_blank"><img width="50" height="50" src="img/whatsapp.png" alt=""></a>
 
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -245,6 +186,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

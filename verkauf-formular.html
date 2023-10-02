@@ -58,10 +58,10 @@
                   <small class="fa fa-phone-alt  me-2"></small>
                   <small><a class="text-light" target="_blank" href="tel:+4917697727775">+49 176 97727775</a></small>
               </div>
-              <div class="h-100 d-inline-flex align-items-center mx-n2">
+              <!-- <div class="h-100 d-inline-flex align-items-center mx-n2">
                   <a class=" text-light btn-square rounded-0 border-0 border-end" href=""><i class="fab fa-facebook-f"></i></a>
                   <a class=" text-light btn-square rounded-0" href=""><i class="fab fa-instagram"></i></a>
-              </div>
+              </div> -->
           </div>
       </div>
   </div>
@@ -82,7 +82,7 @@
               <a href="index.html" class="nav-item nav-link">Startseite</a>
               <a href="index.html#about-us" class="nav-item nav-link">Über uns</a>
               <a href="kontakt.html" class="nav-item nav-link">Kontakt</a>
-              <a href="https://home.mobile.de/AG-AUTOMOBILE#ses" target="_blank" class="nav-item nav-link">Auto Kaufen</a>
+              <a href="https://www.autoscout24.de/haendler/das-autoeck" target="_blank" class="nav-item nav-link">Auto Kaufen</a>
               <a href="verkauf-formular.html" class="nav-item nav-link dissapear brd py-4 px-lg-5 text-color text-center">Auto Verkaufen</a>
           </div>
           <a href="verkauf-formular.html" class="brd py-4 px-lg-5 d-none d-lg-block text-color">Auto Verkaufen<i class="fa fa-arrow-right ms-3"></i></a>
@@ -124,8 +124,9 @@
                         <div class="col-12 col-sm-12">
                            <div class="card c-brd-light condition">
                               <div class="card-body bg-light">
-                                 <form method="POST" class="needs-validation" name="contact" data-netlify="true" >
-                                    <input type="hidden" name="form-name" value="contact" name="contact"> 
+
+                                 <form action="https://formsubmit.co/info@dasautoeck.de" method="POST" class="needs-validation">
+
                                     <div class="row">
                                        <div class="col-12 col-sm-12 col-lg-4">
                                           <div class="form-group">
@@ -134,7 +135,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#producer_650177d893bb1').focus();" id="prepend_producer_650177d893bb1"><i class=" fas fa-car"></i></div>
                                                 </div>
-                                                <select name="producer" id="producer_650177d893bb1" data-id="producer" class="form-control rounded-right focused">
+                                                <select name="Marke" id="producer_650177d893bb1" data-id="producer" class="form-control rounded-right focused">
                                                    <option value="" disabled="" selected="" hidden="">Bitte Marke wählen</option>
                                                    <option value="Audi">Audi</option>
                                                    <option value="BMW">BMW</option>
@@ -237,7 +238,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#modell_650177d893bb1').focus();" id="prepend_modell_650177d893bb1"><i class="fas fa-th"></i></div>
                                                 </div>
-                                                <input type="text" class="form-control modell_650177d893bb1 ui-autocomplete-input" placeholder="Bitte Modell wählen" name="modell" id="modell_650177d893bb1" value="" data-id="modell_650177d893bb1" autocomplete="off"> 
+                                                <input type="text" class="form-control modell_650177d893bb1 ui-autocomplete-input" placeholder="Bitte Modell wählen" name="Modell" id="modell_650177d893bb1" value="" data-id="modell_650177d893bb1" autocomplete="off"> 
                                              </div>
                                           </div>
                                        </div>
@@ -248,7 +249,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#erstzulassung_650177d893c30').focus();" id="prepend_erstzulassung_650177d893c30"><i class="far fa-calendar-alt"></i></div>
                                                 </div>
-                                                <select name="erstzulassung" id="erstzulassung_650177d893c30" data-id="erstzulassung_650177d893c30" class="form-control rounded-right">
+                                                <select name="Erstzulassung" id="erstzulassung_650177d893c30" data-id="erstzulassung_650177d893c30" class="form-control rounded-right">
                                                    <option value="" disabled="" selected="">Bitte Erstzulassung wählen</option>
                                                    <option value="2023">2023</option>
                                                    <option value="2022">2022</option>
@@ -306,7 +307,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#km').focus();" id="prepend_km"><i class="fas fa-tachometer-alt"></i></div>
                                                 </div>
-                                                <select name="km" id="km" data-id="km" class="form-control rounded-right">
+                                                <select name="Kilometerstand" id="km" data-id="km" class="form-control rounded-right">
                                                    <option value="" disabled="" selected="">Bitte Kilometer angeben</option>
                                                    <option value="bis_10000">bis 10.000</option>
                                                    <option value="bis_20000">bis 20.000</option>
@@ -346,17 +347,15 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#fuel').focus();" id="prepend_fuel"><i class="fas fa-gas-pump"></i></div>
                                                 </div>
-                                                <select name="fuel" id="fuel" data-id="fuel" class="form-control rounded-right" style="color: rgb(134, 142, 150);">
+                                                <select name="Kraftstoff" id="fuel" data-id="fuel" class="form-control rounded-right" style="color: rgb(134, 142, 150);">
                                                    <option value="" disabled="" selected="" hidden="">Bitte Kraftstoff wählen</option>
                                                    <option value="Autogas (LPG)">Autogas (LPG)</option>
                                                    <option value="Benzin">Benzin</option>
-                                                   <option value="Brennstoffzelle">Brennstoffzelle</option>
                                                    <option value="Diesel">Diesel</option>
                                                    <option value="Elektro">Elektro</option>
                                                    <option value="Erdgas (CNG)">Erdgas (CNG)</option>
                                                    <option value="Hybrid Benzin">Hybrid Benzin</option>
                                                    <option value="Hybrid Diesel">Hybrid Diesel</option>
-                                                   <option value="Wasserstoff">Wasserstoff</option>
                                                 </select>
                                              </div>
                                           </div>
@@ -368,17 +367,11 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#gear').focus();" id="prepend_gear"><i class="fas fa-cogs"></i></div>
                                                 </div>
-                                                <select name="gear" id="gear" data-id="gear" class="form-control rounded-right" style="color: rgb(134, 142, 150);">
+                                                <select name="Getriebe" id="gear" data-id="gear" class="form-control rounded-right" style="color: rgb(134, 142, 150);">
                                                    <option value="" disabled="" selected="" hidden="">Bitte Getriebe wählen</option>
                                                    <option value="Schaltgetriebe">Schaltgetriebe</option>
                                                    <option value="Automatikgetriebe">Automatikgetriebe</option>
-                                                   <option value="Automatisches Schaltgetriebe">Automatisches Schaltgetriebe</option>
-                                                   <option value="CVT">CVT</option>
-                                                   <option value="Direktschaltgetriebe">Direktschaltgetriebe</option>
                                                    <option value="Halbautomatisches Getriebe">Halbautomatisches Getriebe</option>
-                                                   <option value="S-Tronic">S-Tronic</option>
-                                                   <option value="Tip-Tronic">Tip-Tronic</option>
-                                                   <option value="Unbekannt">Unbekannt</option>
                                                 </select>
                                              </div>
                                           </div>
@@ -390,32 +383,12 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#structure').focus();" id="prepend_structure"><i class="fas fa-random"></i></div>
                                                 </div>
-                                                <select name="structure" id="structure" data-id="structure" class="form-control rounded-right" style="color: rgb(134, 142, 150);">
+                                                <select name="Fahrzeugtyp" id="structure" data-id="structure" class="form-control rounded-right" style="color: rgb(134, 142, 150);">
                                                    <option value="" disabled="" selected="" hidden="">Bitte Fahrzeugtyp wählen</option>
                                                    <option value="Limousine">Limousine</option>
-                                                   <option value="Stufenheck">Stufenheck</option>
-                                                   <option value="Schrägheck">Schrägheck</option>
                                                    <option value="Kombi">Kombi</option>
                                                    <option value="Kleinwagen">Kleinwagen</option>
-                                                   <option value="Geländewagen">Geländewagen</option>
-                                                   <option value="Cabrio">Cabrio</option>
-                                                   <option value="Coupe">Coupe</option>
-                                                   <option value="Großraumlimousine">Großraumlimousine</option>
-                                                   <option value="Kleinbus">Kleinbus</option>
-                                                   <option value="Kleintransporter">Kleintransporter</option>
-                                                   <option value="LKW bis 7,5 t">LKW bis 7,5 t</option>
-                                                   <option value="Mini-VAN">Mini-VAN</option>
-                                                   <option value="Pickup">Pickup</option>
-                                                   <option value="Roadster">Roadster</option>
-                                                   <option value="Sonstige">Sonstige</option>
-                                                   <option value="Sportwagen">Sportwagen</option>
-                                                   <option value="Targa">Targa</option>
-                                                   <option value="Transporter">Transporter</option>
-                                                   <option value="US-Modell">US-Modell</option>
-                                                   <option value="VAN">VAN</option>
-                                                   <option value="VAN bis 5 Sitze">VAN bis 5 Sitze</option>
-                                                   <option value="VAN bis 7 Sitze">VAN bis 7 Sitze</option>
-                                                   <option value="Wohnmobil">Wohnmobil</option>
+                                                   <option value="Nutzfahrzeug">Nutzfahrzeug</option>
                                                 </select>
                                              </div>
                                           </div>
@@ -427,7 +400,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#doors').focus();" id="prepend_doors"><i class="fas fa-door-open"></i></div>
                                                 </div>
-                                                <select name="doors" id="doors" data-id="doors" class="form-control rounded-right" style="color: rgb(134, 142, 150);">
+                                                <select name="Türen" id="doors" data-id="doors" class="form-control rounded-right" style="color: rgb(134, 142, 150);">
                                                    <option value="" disabled="" selected="" hidden="">Anzahl der Türen</option>
                                                    <option value="2/3 Türer">2/3 Türer</option>
                                                    <option value="4/5 Türer">4/5 Türer</option>
@@ -442,7 +415,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#kwps').focus();" id="prepend_kwps"><i class="fas fa-horse"></i></div>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="Bitte KW/PS angeben" name="kwps" id="kwps" value="" data-id="kwps"> 
+                                                <input type="text" class="form-control" placeholder="Bitte KW/PS angeben" name="kw-ps" id="kwps" value="" data-id="kwps"> 
                                              </div>
                                           </div>
                                        </div>
@@ -453,7 +426,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#standort').focus();" id="prepend_standort"><i class="fas fa-map-marker-alt"></i></div>
                                                 </div>
-                                                <input type="text" class="form-control standort_650177d893bb1 ui-autocomplete-input" placeholder="Wo steht Ihr Auto?" name="standort" id="standort" value="" data-id="standort" autocomplete="off"> 
+                                                <input type="text" class="form-control standort_650177d893bb1 ui-autocomplete-input" placeholder="Wo steht Ihr Auto?" name="Standort" id="standort" value="" data-id="standort" autocomplete="off"> 
                                              </div>
                                           </div>
                                        </div>
@@ -464,7 +437,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#price').focus();" id="prepend_price"><i class="fas fa-euro-sign"></i></div>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="Mindestpreis in EUR" name="price" id="price" value="" data-id="price"> 
+                                                <input type="text" class="form-control" placeholder="Mindestpreis in EUR" name="Mindestpreis (EUR)" id="price" value="" data-id="price"> 
                                              </div>
                                           </div>
                                        </div>
@@ -484,7 +457,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#telefon').focus();" id="prepend_telefon"><i class="fas fa-phone"></i></div>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="Ihre Telefonnummer*" name="telefon" id="telefon" value="" data-id="telefon" required="">
+                                                <input type="text" class="form-control" placeholder="Ihre Telefonnummer*" name="Telefonnummer" id="telefon" value="" data-id="telefon" required="">
                                                 <div class="invalid-feedback">Bitte eintragen!</div>
                                              </div>
                                           </div>
@@ -496,7 +469,7 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#email').focus();" id="prepend_email"><i class="fas fa-at"></i></div>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="Ihre E-Mail*" name="email" id="email" value="" data-id="email" required="">
+                                                <input type="text" class="form-control" placeholder="Ihre E-Mail*" name="E-Mail" id="email" value="" data-id="email" required="">
                                                 <div class="invalid-feedback">Bitte eintragen!</div>
                                              </div>
                                           </div>
@@ -508,15 +481,15 @@
                                                 <div class="input-group-prepend">
                                                    <div class="input-group-text" onclick="$('#name').focus();" id="prepend_name"><i class="far fa-address-book"></i></div>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="Vorname und Name" name="name" id="name" value="" data-id="name"> 
+                                                <input type="text" class="form-control" placeholder="Vorname und Name" name="Vorname und Name" id="name" value="" data-id="name"> 
                                              </div>
                                           </div>
                                        </div>
                                        <div class="col-12 col-sm-12 col-lg-12">
-                                          <div class="form-group"><label class="c-dark" for="beschreibung">Berschreibung</label> <textarea class="form-control" placeholder="Was ist noch wissenswert? Geben Sie uns weitere Informationen zum Auto..." name="beschreibung" id="beschreibung"></textarea></div>
+                                          <div class="form-group"><label class="c-dark" for="beschreibung">Berschreibung</label> <textarea class="form-control" placeholder="Was ist noch wissenswert? Geben Sie uns weitere Informationen zum Auto..." name="Beschreibung" id="beschreibung"></textarea></div>
                                        </div>
                                        <div class="col-12 col-md-8 pt-4">
-                                          <div class="form-group"><input type="checkbox" id="cbox_dataprotection" name="dataprotection[]" value="1" class="form-check-input" required=""><label class="form-check-label" for="cbox_dataprotection">Hiermit bestätige ich die <a href="impressum.html" target="_blank" class="c-primary">Datenschutzbedingungen</a>.</label></div>
+                                          <div class="form-group"><input type="checkbox" id="cbox_dataprotection" value="1" class="form-check-input" required=""><label class="form-check-label" for="cbox_dataprotection">Hiermit bestätige ich die <a href="impressum.html" target="_blank" class="c-primary">Datenschutzbedingungen</a>.</label></div>
                                        </div>
                                        
                                        <div class="col-12 col-sm-4 col-lg-4 ml-auto pt-3 mt-0 mt-sm-0">
@@ -564,9 +537,9 @@
                   <a href="index.html" class=" navbar-brand d-flex align-items-center">
                       <img class="logo" src="img/logo.png" alt="">
                   </a>
-                  <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Dammerstr. 50, 49451, Holdorf</p>
+                  <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Dammerstr. 50, 49451 Holdorf</p>
                   <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+49 176 97727775</p>
-                  <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                  <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@dasautoeck.de</p>
               </div>
 
               <div class="col-lg-4 col-md-6">
@@ -576,17 +549,17 @@
                   <a class="btn btn-link" href="impressum.html">Impressum</a>
               </div>
               <div class="col-lg-4 col-md-6">
-                  <form action="">
+                  <form action="https://formsubmit.co/n0n0bt@gmail.com" method="POST">
                       <div class="input-group">
-                          <input type="text" class="form-control p-3 border-0" placeholder="Deine E-mail Addresse">
+                          <input type="text" name="E-Mail" class="form-control p-3 border-0" placeholder="Deine E-mail Addresse">
                           <button class="btn btn-primary">Anmelden</button>
                       </div>
                   </form>
-                  <h6 class="text-white mt-4 mb-3">Folgen Sie uns</h6>
+                  <!-- <h6 class="text-white mt-4 mb-3">Folgen Sie uns</h6>
                   <div class="d-flex pt-2">
                       <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-instagram"></i></a>
                       <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                  </div>
+                  </div> -->
               </div>
           </div>
       </div>
